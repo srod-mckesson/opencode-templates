@@ -6,8 +6,8 @@ To create useful and repeatable files for working with opencode.
 
 - language agnostic:
 	- files:
-		- `plan.md`
-		- `research.md`
+		- `plans/plan.md`
+		- `research/research.md`
 - language specific: 
 	- languages: [python, r, julia]
 	- files: `AGENTS.md`
