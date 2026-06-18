@@ -73,12 +73,12 @@ Always set `bread-crumbs: true`.
 ### Page Footer
 Ask: "What text should appear in the footer?" (e.g., your name or organization)
 
-Always set `background: dark`. Use the current year for yyyy. If user provides text, use it; otherwise omit the left field or use a generic placeholder:
+Always set `background: dark`. Replace `{{< current_year >}}` with the current year. If user provides text, use it; otherwise omit the left field or use a generic placeholder:
 
 ```yaml
 page-footer:
   background: dark
-  left: "© 2026-Present Your Name"    # replace "Your Name" with user input, use current year
+  left: "© {{< current_year >}}-Present Your Name"    # replace "Your Name" with user input, substitute current year
 ```
 
 ### Navigation Bar (Navbar)
@@ -89,7 +89,7 @@ Ask: "What social links should appear in the navbar?"
 - GitHub URL (if provided)
 - GitLab URL (if provided)
 
-For each social link, always add `target: _blank` to open in new tab.
+For each social link, always add `target: _blank` and `rel: noopener` to open in a new tab and prevent tabnabbing attacks.
 
 #### Navbar Options
 Ask the user about these optional navbar settings:
@@ -111,12 +111,15 @@ navbar:
     - icon: linkedin
       href: "https://linkedin.com/in/username"
       target: _blank
+      rel: noopener
     - icon: github
       href: "https://github.com/username"
       target: _blank
+      rel: noopener
     - icon: gitlab
       href: "https://gitlab.com/username"
       target: _blank
+      rel: noopener
 ```
 
 ### Website Section Template
@@ -130,22 +133,25 @@ website:
   search: true                            # or false
   page-footer:
     background: dark
-    left: "© 2026-Present Your Name"
+    left: "© {{< current_year >}}-Present Your Name"
   navbar:
     tools:
       - icon: linkedin
         href: "https://linkedin.com/in/username"
         target: _blank
+        rel: noopener
       - icon: github
         href: "https://github.com/username"
         target: _blank
+        rel: noopener
       - icon: gitlab
         href: "https://gitlab.com/username"
         target: _blank
+        rel: noopener
 ```
 
 ## External Links Rule
-**IMPORTANT:** Anytime a URL is referenced in _quarto.yml (in navbar, footer, or any other section), always add `target: _blank` to open links in a new tab/page.
+**IMPORTANT:** Anytime a URL is referenced in _quarto.yml (in navbar, footer, or any other section), always add `target: _blank` and `rel: noopener` to open links in a new tab/page and prevent tabnabbing attacks (where the new page can manipulate the original page via `window.opener`).
 
 ## 3. Global Settings
 
@@ -362,18 +368,21 @@ website:
   search: true
   page-footer:
     background: dark
-    left: "© 2026-Present Your Name"
+    left: "© {{< current_year >}}-Present Your Name"
   navbar:
     tools:
       - icon: linkedin
         href: "https://linkedin.com/in/username"
         target: _blank
+        rel: noopener
       - icon: github
         href: "https://github.com/username"
         target: _blank
+        rel: noopener
       - icon: gitlab
         href: "https://gitlab.com/username"
         target: _blank
+        rel: noopener
 
 format:
   html:
