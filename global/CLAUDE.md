@@ -1,3 +1,5 @@
+@andrej-karpathy-skills.md
+
 # Tools
 
 - If `rtk` is installed, it runs as an opencode hook and cannot be bypassed by agents
