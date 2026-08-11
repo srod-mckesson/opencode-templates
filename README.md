@@ -25,12 +25,15 @@ The reason I chose `skills` is that it automates gettings skills, placing skills
 - [https://boristane.com/blog/how-i-use-claude-code/](https://boristane.com/blog/how-i-use-claude-code/)
 - [https://pydevtools.com/handbook/how-to/how-to-configure-claude-code-to-use-uv/](https://pydevtools.com/handbook/how-to/how-to-configure-claude-code-to-use-uv/)
 
-# Tools
+# Instructions
+
 - [andrej-karpathy-skills](https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/refs/heads/main/CLAUDE.md)
 - Kenn-io agent [constitution](https://raw.githubusercontent.com/kenn-io/constitution/refs/heads/main/CONSTITUTION.md)
-- [opencode](https://opencode.ai/docs/) as primary coding harness
-- [skills](https://github.com/vercel-labs/skills) to install and manage skills
-- [roborev](https://www.roborev.io/) reviewer layer/harness
+
+# Tools
+- [opencode](https://opencode.ai/docs/) coding harness
+- vercel labs [skills](https://github.com/vercel-labs/skills) to install and manage skills
+- [roborev](https://www.roborev.io/) review layer/harness
 - [rtk](https://github.com/rtk-ai/rtk) to save tokens on common commands
 - [agent-vault](https://github.com/Infisical/agent-vault) credential broker
 	- `agent-vault run -- opencode`
@@ -41,6 +44,10 @@ The reason I chose `skills` is that it automates gettings skills, placing skills
 		- `npx llm-checker`
 	- [whichllm](https://github.com/Andyyyy64/whichllm/)
 		- `uvx whichllm@latest`
+
+# Model providers
+
+- [opencode zen]()
 - [Ollama](https://ollama.com/)
 	- update docker image to latest: `docker pull ollama/ollama`
 	- stop and rm existing docker container:
