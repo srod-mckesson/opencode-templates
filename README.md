@@ -27,7 +27,8 @@ The reason I chose `skills` is that it automates gettings skills, placing skills
 
 # Tools
 - [andrej-karpathy-skills](https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/refs/heads/main/CLAUDE.md)
-- [opencode](https://opencode.ai/docs/) as my coding harness
+- Kenn-io agent [constitution](https://raw.githubusercontent.com/kenn-io/constitution/refs/heads/main/CONSTITUTION.md)
+- [opencode](https://opencode.ai/docs/) as primary coding harness
 - [skills](https://github.com/vercel-labs/skills) to install and manage skills
 - [roborev](https://www.roborev.io/) reviewer layer/harness
 - [rtk](https://github.com/rtk-ai/rtk) to save tokens on common commands
