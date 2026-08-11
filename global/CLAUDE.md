@@ -1,3 +1,5 @@
+@andrej-karpathy-skills.md
+
 # Tools
 
 - If `rtk` is installed, it runs as an opencode hook and cannot be bypassed by agents
@@ -40,6 +42,7 @@ updated: yyyy-mm-dd
 
 Use `date` when the file is created.
 Add or update `updated` only when modifying an existing research file.
+Add `status: resolved` when a research file has been completed/resolved.
 
 A new research file should include:
 
