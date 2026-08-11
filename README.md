@@ -47,7 +47,7 @@ The reason I chose `skills` is that it automates gettings skills, placing skills
 
 # Model providers
 
-- [opencode zen]()
+- [opencode zen](https://opencode.ai/docs/zen/)
 - [Ollama](https://ollama.com/)
 	- update docker image to latest: `docker pull ollama/ollama`
 	- stop and rm existing docker container:
