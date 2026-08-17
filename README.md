@@ -37,6 +37,8 @@ The reason I chose `skills` is that it automates gettings skills, placing skills
 - [rtk](https://github.com/rtk-ai/rtk) to save tokens on common commands
 - [agent-vault](https://github.com/Infisical/agent-vault) credential broker
 	- `agent-vault run -- opencode`
+- [superpowers](https://github.com/obra/superpowers) - software development methodology for coding agents
+- [ponytail](https://github.com/DietrichGebert/ponytail) - to avoid over engineering
 - For assessing the best local AI
 	- [llmfit](https://github.com/AlexsJones/llmfit)
 		- `uvx llmfit`
